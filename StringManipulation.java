@@ -32,5 +32,11 @@ public class StringManipulation {
         System.out.println("Replace 'a' with '*': " + str.replace('a', '*'));
 
         System.out.println("Concatenation with ' Java': " + str.concat(" Java"));
+        System.out.println("Trimmed string is: " + str.trim());
+        System.out.println("Enter the beginning index from where you have to start search: ");
+        int beg=Integer.parseInt(br.readLine());
+        System.out.println("Enter the ending index at which you have to stop search: ");
+        int end=Integer.parseInt(br.readLine());
+        System.out.println("The substring of the string "+str+" from "+beg+" index upto "+end+" index is: "+str.substring(beg,end));
     }
 }
