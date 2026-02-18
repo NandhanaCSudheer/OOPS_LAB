@@ -5,6 +5,8 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 
 class Shape{
+    
+    double ar;
 
     void area(double r){
         System.out.println("The area of Circle is: "+ 3.14*r*r);
@@ -18,8 +20,9 @@ class Shape{
         System.out.println("The area of Rectangle is: "+a*b);
     }
 
-    void area(double a, double b){
-        System.out.println("The area of Triangle is: "+0.5*a*b);
+    Double area(double a, double b){
+        ar=0.5*a*b;
+        return ar;
     }
 }
 class Area{
@@ -27,7 +30,7 @@ class Area{
     public static void main(String args[]) throws IOException{
 
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        double r,x,y;
+        double r,x,y,ar;
         float a,b,c;
         System.out.println("Enter the radius of the Circle: ");
         r=Double.parseDouble(br.readLine());
@@ -46,6 +49,7 @@ class Area{
         sh.area(r);
         sh.area(a);
         sh.area(b,c);
-        sh.area(x,y);
+        ar=sh.area(x,y);
+        System.out.println("The area of Triangle is: "+ar);
     }
 }
