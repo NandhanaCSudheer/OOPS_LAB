@@ -8,13 +8,15 @@ class A{
 
 class B extends A{
     void display(){
-        super.display();
+        super.display();  //invokes parent's display method
+
         System.out.println("First child: B");
     }
 }
 
 class C extends A{
     void display(){
+        
         System.out.println("Second child: C");
     }
 }

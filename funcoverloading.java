@@ -1,11 +1,13 @@
 // filename is used for compiling
 // main class name is used for running java file
+
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
 class Shape{
-    
+
     double ar;
 
     void area(double r){
