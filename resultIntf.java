@@ -23,7 +23,7 @@ class Result implements Student, Sports{
         this.std = std;
         this.marks = marks;
 
-        System.out.println(" ");
+        System.out.println("Student Details: ");
         System.out.println("Id: "+id);
         System.out.println("Name: "+name);
         System.out.println("Standard: "+std);
