@@ -21,21 +21,21 @@ public class cpu {
         System.out.println("Manufacturer: "+manup);
     }
 }
-static class ram{
-    int memory;
-    String manup;
+    static class ram{
+        int memory;
+        String manup;
 
-    ram(int memory,String manup){
-        this.memory=memory;
-        this.manup=manup;
+        ram(int memory,String manup){
+            this.memory=memory;
+            this.manup=manup;
+        }
+        void display(){
+            System.out.println("Ram memory: "+memory);
+            System.out.println("Manufacturer: "+manup);
+        }
+
+
     }
-    void display(){
-        System.out.println("Ram memory: "+memory);
-        System.out.println("Manufacturer: "+manup);
-    }
-
-
-}
 public static void main(String args[])throws IOException{
     cpu c=new cpu(25000);
     cpu.processor p=c.new processor(8,"Intel");

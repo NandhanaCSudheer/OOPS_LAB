@@ -45,7 +45,7 @@ public class arraylist
                 System.out.println("After removing "+el+ " ArrayList: "+list);
                 break;
             case 7:
-                System.out.print("Enter the index to remove theelement: ");
+                System.out.print("Enter the index to remove the element: ");
                 index=sc.nextInt();
                 list.remove(index); 
                 System.out.println("After removing the element,arraylist:"+list);
